@@ -1,0 +1,25 @@
+{% extends 'base.html' %}{% block content %}
+
+<h2>Products</h2>
+
+<section id="recent">
+  <!-- {{det}} -->
+  <div class="row">
+    <h2>{{det.p_category}}</h2>
+    <h2>{{det.p_brand}}</h2>
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="/media/{{det.p_image}}" class="card-img-top w-100" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{det.name}}</h5>
+              <span>{{det.p_price}}</span>
+              <span>{{det.p_id}}</span>
+              <a href="#" class="btn btn-primary" >view products</a>
+            </div>
+            
+        </div>
+    </div>    
+  </div>
+</section> 
+<!--Most viewed-->
+{% endblock %}
